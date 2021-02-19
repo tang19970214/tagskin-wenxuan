@@ -1,0 +1,20 @@
+{
+  "name": "tagSkin_front",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=dev nuxt --port 3000",
+    "prod": "cross-env NODE_ENV=prod nuxt --port 3000",
+    "build": "cross-env NODE_ENV=prod nuxt build"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.12.5",
+    "@nuxtjs/dotenv": "^1.4.1",
+    "core-js": "^3.8.3",
+    "cross-env": "^7.0.3",
+    "nuxt": "^2.14.12"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^3.4.2"
+  }
+}
