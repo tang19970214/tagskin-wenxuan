@@ -90,7 +90,7 @@
     </div>
 
     <!-- introduce -->
-    <div class="px-20 pb-20">
+    <!-- <div class="px-20 pb-20">
       <div class="w-full flex items-center justify-center flex-col sm:items-start sm:flex-row bg-gradient-to-r from-pink-100 to-pink-200 rounded-lg shadow-lg">
         <div class="transform -translate-y-4">
           <img src="../assets/images/product/essence.jpg" alt="" width="200px">
@@ -127,7 +127,7 @@
 
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- fast order -->
     <OrderModal :openModal="openModal" @closeModal="closeModal" />
