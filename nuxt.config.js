@@ -3,7 +3,7 @@ import router from "./router.js";
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'tagSkin_front',
+    title: 'tagSkin',
     htmlAttrs: {
       lang: 'en'
     },
@@ -18,6 +18,7 @@ export default {
   },
 
   router: {
+    name: "tagskin-wenxuan",
     // mode: "hash",
     scrollBehavior: () => ({ y: 0 }),
     extendRoutes(routes, resolve) {

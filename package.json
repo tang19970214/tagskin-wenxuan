@@ -6,7 +6,7 @@
     "dev": "cross-env NODE_ENV=dev nuxt --port 3000",
     "prod": "cross-env NODE_ENV=prod nuxt --port 3000",
     "build": "cross-env NODE_ENV=prod nuxt build",
-    "generate": "nuxt generate"
+    "generate": "cross-env NODE_ENV=prod nuxt generate"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.12.5",
