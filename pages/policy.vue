@@ -73,3 +73,14 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  mounted() {
+    this.$store.dispatch("loadingHandler", true);
+    setTimeout(() => {
+      this.$store.dispatch("loadingHandler", false);
+    }, 300);
+  },
+};
+</script>

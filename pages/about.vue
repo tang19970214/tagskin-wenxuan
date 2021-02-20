@@ -8,7 +8,7 @@
     </div>
 
     <!-- content -->
-    <div class="px-20 py-10">
+    <div class="px-10 md:px-20 py-10">
       <div class="w-full mb-10">
         <strong class="text-xl tracking-tight text-gray-700">Hi! 歡迎加入 “ TAG SKIN養肌協會 ”</strong>
       </div>
@@ -37,9 +37,7 @@
       </div>
     </div>
 
-    <div class="px-20 pb-20">
-
-      <!-- Carousel Body -->
+    <div class="px-10 md:px-20 pb-20">
       <div class="relative rounded-lg block md:flex items-center bg-gray-100 shadow-xl" style="min-height: 19rem;">
         <div class="relative w-full md:w-2/5 h-full overflow-hidden rounded-t-lg md:rounded-t-none md:rounded-l-lg" style="min-height: 19rem;">
           <img class="absolute inset-0 w-full h-full object-cover object-center" src="https://stripe.com/img/v3/payments/overview/photos/missguided.jpg" alt="">
@@ -51,7 +49,7 @@
           </div>
         </div>
 
-        <div class="w-full md:w-3/5 h-full flex items-center bg-gray-100 rounded-lg">
+        <div class="w-full md:w-3/5 h-full flex items-center bg-gray-100 rounded-lg text-center md:text-left">
           <div class="w-full p-12 md:pr-24 md:pl-16 md:py-12">
             <strong class="text-lg text-gray-700 tracking-widest border-b-2 border-gray-600">代理小資訊</strong>
             <div class="w-full pt-5">
@@ -71,7 +69,7 @@
                 </span>
               </span>
 
-              <strong class="mx-5">或</strong>
+              <strong class="my-2 mx-5 md:my-0">或</strong>
 
               <span class="relative inline-flex shadow-sm">
                 <button class="tracking-wider py-2 px-4 text-base font-bold border-2 border-orange-600 text-orange-600 bg-transparent duration-500 hover:bg-orange-400 hover:bg-opacity-75 hover:border-orange-500 hover:text-white" @click="goShoppee">前往蝦皮賣場</button>
@@ -159,6 +157,12 @@ export default {
     closeModal() {
       this.openModal = false;
     },
+  },
+  mounted() {
+    this.$store.dispatch("loadingHandler", true);
+    setTimeout(() => {
+      this.$store.dispatch("loadingHandler", false);
+    }, 300);
   },
 };
 </script>
