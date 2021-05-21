@@ -18,7 +18,7 @@ export default {
   },
 
   router: {
-    base: "/tagskin-wenxuan/",
+    // base: "/tagskin-wenxuan/",
     // mode: "hash",
     scrollBehavior: () => ({ y: 0 }),
     extendRoutes(routes, resolve) {
@@ -55,6 +55,6 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    // publicPath: 'https://tagskin-wenxuan.herokuapp.com'
+    publicPath: 'tagskin-wenxuan.herokuapp.com'
   }
 }
