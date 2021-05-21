@@ -18,7 +18,7 @@ export default {
   },
 
   router: {
-    name: "tagskin-xuan",
+    name: "tagskin-wenxuan.herokuapp.com",
     // mode: "hash",
     scrollBehavior: () => ({ y: 0 }),
     extendRoutes(routes, resolve) {
