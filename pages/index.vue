@@ -1,6 +1,7 @@
 <template>
   <div id="homePage">
     <div class="w-full">
+      test
       <!-- Banner -->
       <img src="../assets/images/banner1.jpg" alt="" width="100%">
 
