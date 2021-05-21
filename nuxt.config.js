@@ -18,7 +18,7 @@ export default {
   },
 
   router: {
-    name: "tagskin-wenxuan",
+    // name: "tagskin-wenxuan",
     // mode: "hash",
     scrollBehavior: () => ({ y: 0 }),
     extendRoutes(routes, resolve) {
